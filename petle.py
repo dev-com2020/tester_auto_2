@@ -28,24 +28,31 @@ cyfry = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 #             break
 #     print(f'(p={jezyki[p]}, q={cyfry[q]})')
 
-# i = 1
+# i = 11
 # tmp = 0
 # while i <= 100:
 #     tmp = tmp + i
 #     i = i + i
-# print("Suma liczb od 1 do 99", tmp)
+#
+# print("Suma liczb od 1 do 99 wynik:", tmp)
+
+# while True:
+#     print("Menu:")
+#     print("1. policz")
+#     print("2. wyjdź")
+#     print("------")
+#     wybor = input("Wybierz opcje:")
+#     if wybor == "1":
+#         print("Suma:", 50 + 55)
+#     elif wybor == "2":
+#         break
+#     else:
+#         print("Nieznana opcja!")
+
+count = 0
 
 while True:
-    print("Menu:")
-    print("1. policz")
-    print("2. wyjdź")
-    print("------")
-    wybor = input("Wybierz opcje:")
-    if wybor == "1":
-        print("Suma:", 50 + 55)
-    elif wybor == "2":
+    count += 1
+    print("To jest iteracja nr",count)
+    if count >= 5:
         break
-    else:
-        print("Nieznana opcja!")
-
-
