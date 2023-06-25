@@ -29,3 +29,4 @@ czlowiek3 = human.Human2('Adam',25,'m')
 czlowiek3.powitanie()
 czlowiek3.jaka_plec()
 czlowiek3.ile_mam_lat()
+
