@@ -1,11 +1,11 @@
 class Animal:
 
     def __init__(self,gatunek,szybkosc):
-        self.gatunek = gatunek
+        self.__gatunek = gatunek
         self.szybkosc = szybkosc
 
     def poluj(self):
-        print(f"Jestem {self.gatunek}, rozpoczynam polowanie")
+        print(f"Jestem {self.__gatunek}, rozpoczynam polowanie")
 
     def lataj(self):
         print(f'Latam z prędkością {self.szybkosc}')
@@ -17,7 +17,7 @@ class Ssak(Animal):
         super().__init__(gatunek, szybkosc)
         self.umaszczenie = umaszczenie
 
-    def lataj(self):
+    def __lataj(self):
         print("Sorry, ja jestem nielotem...")
 
     def wydaj_odglos(self):
@@ -28,6 +28,7 @@ class Ssak(Animal):
 
 
 orzel = Animal('Bielik',50)
+# orzel.__gatunek = "SŁOŃ"
 orzel.poluj()
 orzel.lataj()
 
