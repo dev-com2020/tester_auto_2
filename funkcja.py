@@ -45,3 +45,12 @@ print(kolejka)
 # pacjent(imie="Robert")
 
 
+def parametry(*args):
+    for x in range(len(args)):
+        print(f"Parametry które dotarły do funkcji: {args[x]}")
+
+
+parametry()
+parametry(23)
+parametry(23,"tomek")
+parametry(23,"tomek",[4,5,6])
