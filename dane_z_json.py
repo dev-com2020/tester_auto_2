@@ -23,5 +23,5 @@ slownik['czyPali'] = None
 # print(slownik.values())
 # print("Tomek" in slownik)
 # print(slownik)
-with open('baza.json','w') as plik:
+with open('assets/baza.json', 'w') as plik:
     json.dump(slownik,plik)
